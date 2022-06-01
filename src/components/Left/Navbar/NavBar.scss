@@ -1,0 +1,24 @@
+.navbar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    a{
+        color:rgb(168, 168, 168);
+        
+        &:hover{
+        color: rgba(41, 41, 41, 1);
+       
+    }
+    }
+    .active{
+        svg{
+            color: rgba(41, 41, 41, 1);
+            path{
+                color: rgba(41, 41, 41, 1);
+                  
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,29 @@
+.header-left{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px 20px 28px;
+    border-right: solid 1px #E6E6E6;
+}
+.header-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #7E57C2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header-name{
+        text-transform: capitalize;
+        padding: 0;
+        margin: 0;
+        font-size: large;
+        font-weight:    500;
+        color: #fff;
+    }
+}

@@ -1,0 +1,9 @@
+.center{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    .center-conteiner{
+        width: 695px;
+        margin: 0 32px;
+    }
+}

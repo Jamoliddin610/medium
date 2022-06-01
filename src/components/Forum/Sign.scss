@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.sign-in-container{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+.sign-in-title{
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.sign-in-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    input{
+        background: #FFFFFF;
+        border: 1px solid #B4B4BB;
+        border-radius: 10px;
+        padding: 10px 5px;
+        margin-bottom: 10px;
+    }
+    button{
+        width: 100%;
+        padding:  10px;
+        border-radius: 20px;
+        margin: 15px auto ;
+        background-color:black;
+        color: #FFFFFF;
+    }
+}
+.sign-uper{
+    align-items:flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-size: large;
+    a{
+        color: #1a8917;
+        text-decoration: none;
+    }
+    margin-bottom: 50px;
+}
+.title-sign-up{
+    font-size: 40px;
+}
+
+.error{
+    outline: solid 2px red ;
+}
