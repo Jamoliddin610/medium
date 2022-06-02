@@ -11,13 +11,12 @@ const Modal = (props) => {
         setNUm(e.target.value.length)
         setValue(e.target.value)
     }
-    const [son, setSon] = useState(2)
     const createCategoryHandler = () =>{
         props.setArr([...props.arr,{
             name:value,
-            id: son
+            id: props.arr.length + 1
         }])
-        setSon(son+1)
+        
         setValue('')
     }
 

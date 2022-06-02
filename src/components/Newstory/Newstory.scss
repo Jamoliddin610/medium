@@ -1,0 +1,105 @@
+.new-story {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.new-story-box {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    .new-story-container {
+        width: 1070px;
+        margin: 0 32px;
+        
+            .new-story-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 65px;
+                margin-bottom: 25px;
+                div{
+                    display: flex;
+                }
+                .header-about{
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgba(0,0,0,.84)!important;
+                    line-height: 1.4;
+                    a{
+                        margin-right: 10px;
+                    }
+                    p{
+                        margin: 0;
+                        margin-right: 18px;
+                        
+
+                    }
+                    span{
+                        color: rgba(0,0,0,.54)!important;
+                    }
+                }
+                .header-tech{
+                    align-items: center;
+                    gap: 16px;
+                    svg{
+                        fill: rgba(0,0,0,.54);
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+                    .header-publish{
+                        height: 25px;
+                        padding: 0 10px;
+                        font-size: 16px;
+                        text-align: center;
+                        color: #fff;
+                        background: #1a8917;
+                        border-radius: 99em;
+                    }
+                    .header-av{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background-color: #7E57C2;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        p{
+                            margin-bottom: 0;
+                            margin-top: -2px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .new-story-main{
+                width: 800px;
+                margin: 0 auto;
+                display: flex;
+                .new-story-ball{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    border: solid 1px black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                textarea{
+                    width: 740px;
+                    padding: 0 20PX ;
+                    border: none;
+                    outline: none;
+                    background-color: #fff;
+                    font-size: 16px;
+                    resize: none;
+                    color: rgba(0,0,0,.84);
+                }
+            }
+        
+    }
+}

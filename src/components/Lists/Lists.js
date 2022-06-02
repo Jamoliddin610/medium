@@ -4,26 +4,19 @@ import Modal from '../Modal/Modal';
 import Right from '../Right/Right';
 import data from '../../data';
 import './List.scss'
+import { Link } from 'react-router-dom';
 
-const Lists = () => {
-   
-    const [arr,setArr]=useState([
-        {
-            name: 'Reading List',
-            id: 1,
-        },
-    ])
-    console.log(arr);
-    const [clas,setClas] = useState('')    
+const Lists = (props) => {
 
     const modalHandler = () =>{
-        setClas('show')
+        props.setClas('show')
     }
+    const [img,setImg] = useState('')
     
-
+    console.log(img);
     return (
         <>
-            <Modal clas={clas} setClas={setClas} arr={arr} setArr={setArr}/>
+            <Modal clas={ props.clas} setClas={ props.setClas} arr={ props.arr} setArr={ props.setArr}/>
             <div className='list'>
                 <Left />
                 <div className='list-box'>
@@ -55,8 +48,9 @@ const Lists = () => {
                                     <svg width="19" height="19" viewBox="0 0 19 19" class="arb"><path d="M13.8 4.6L9.5 8.89 5.21 4.6l-.61.61 4.29 4.3-4.29 4.28.61.62 4.3-4.3 4.28 4.3.62-.62-4.3-4.29 4.3-4.29" fill-rule="evenodd"></path></svg>
                                 </div>
                             </div>
-                            {arr.map(item => (
-                                <div className='categories'>
+                            {props.arr.map(item => (
+                                <div className='categories' id={item.id}>
+                                    <Link to={`/saved/${item.id}`}>
                                     <div className='category-inner'>
                                         <h4 className='category-name'>
                                             {item.name}
@@ -64,33 +58,44 @@ const Lists = () => {
                                         <button className='category-btn'>View list</button>
 
                                     </div>
+                                    </Link>
                                     <div className='category-img-boxs'>
                                         <div className='category-img-first-box'>
-                                            <img src={''} alt="" />
+                                            {data.map(el =>{
+                                                if (el.categoryId == item.id) {
+                                                    return(
+                                                        <img src={el.img} alt=""  className='category-img'/>
+                                                    )
+                                                }
+                                            })}
                                             <div className='categ-circle'></div>
                                         </div>
                                         <div className='category-img-second-box'>
-                                            <img src={''} alt="" />
+                                            {data.map(el =>{
+                                                if (el.categoryId == item.id) {
+                                                    return(
+                                                        <img src={el.img} alt=""  className='category-img-second'/>
+                                                    )
+                                                }
+                                            })}
                                             <div className='categ-circle'></div>
 
                                         </div>
                                         <div className='category-img-third-box'>
-                                            <img src={''} alt="" />
+                                            {data.map(el =>{
+                                                if (el.categoryId == item.id) {
+                                                    return(
+                                                        <img src={el.img} alt=""  className='category-img-third'/>
+                                                    )
+                                                }
+                                            })}
                                             <div className='categ-circle'></div>
 
                                         </div>
                                     </div>
                                 </div>
                             ))}
-                            {
-                              data.map(item =>{
-                                  if (item.isTrue) {
-                                      return (
-                                          <h1>{item.name}</h1>
-                                      )
-                                  }
-                              })  
-                            }
+                            
                         </div>
                     </div>
                 </div>

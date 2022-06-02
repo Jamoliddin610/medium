@@ -1,0 +1,107 @@
+.saved {
+    display: flex;
+    padding: 0 395px 0 82px;
+}
+
+.saved-box {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    .saved-container {
+        width: 695px;
+        margin: 0 32px;
+    }
+}
+.add-note{
+    border-left: 3px solid rgb(230, 230, 230);
+    padding-left: 18px;
+    color: rgb(230, 230, 230);
+    font-size: 14px;
+    height: 32px;
+    margin-bottom: 32px;
+    p{
+        padding: 4px 0;
+    }
+}
+.saved-header{
+    width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 56px;
+        margin-bottom: 32px;
+        .header-avatar{
+            width: 48px;
+            height: 49px;
+            box-shadow: #0000000d 0px 0px 0px 1px inset;
+            margin-right: 16px;
+            p{
+                font-size: 25px;
+            }
+        }
+        div{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            p{
+                padding: 0;
+                margin: 0;
+            }
+            img{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                object-fit: cover !important;
+                margin-right: 16px;
+            }
+            span{
+                color: rgb(117,117,117);
+            }
+            .dot{
+                width: 2px;
+                height: 2px;
+                background-color: rgb(117,117,117);;
+            }
+            .content-about{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: coloum ;
+                .content-name{
+                       font-size: 16px;
+                       line-height: 24px; 
+                       color: rgba(41, 41, 41, 1);
+                       text-transform: capitalize;
+                }
+            }
+            .content-times{
+                display: flex;
+                align-items: center;
+                span{
+                    color: rgba(117, 117, 117, 1);
+                }
+                .dot{
+                    margin: 0 8px;
+
+                }
+            }
+        }
+    }
+    .content-about{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .content-name{
+            color: rgba(41,41,41,1);
+            line-height: 24px;
+        }
+    }
+    .content-btn-save{
+        position: relative;
+        #content-bnt{
+            position: absolute;
+            z-index: 100;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+        }
+    }

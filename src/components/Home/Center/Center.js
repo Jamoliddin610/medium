@@ -4,7 +4,7 @@ import './Center.scss'
 import Contents from './Contents/Contents';
 import data from '../../../data';
 
-const Center = () => {
+const Center = (props) => {
     let [arr, setArr] = useState([]);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const Center = () => {
         <div className='center'>
             <div className='center-conteiner'>
             <Topic arr={arr} setArr={setArr} />
-            <Contents arr={arr}/>
+                <Contents arr={arr} newArr={props.newArr} setCls={props.setCls} cls={props.cls} saveHandler={props.saveHandler} savedHandler={props.savedHandler} />
             </div>
         </div>
     );
