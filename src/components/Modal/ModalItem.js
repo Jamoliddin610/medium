@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Backdrop from './Backdrop/Backdrop';
 import './ModalItem.scss'
 const Modal = (props) => {
     const [num,setNUm]=useState(0)

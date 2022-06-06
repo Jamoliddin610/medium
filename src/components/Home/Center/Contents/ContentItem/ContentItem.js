@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookmark, faEllipsis } from '@fortawesome/free-solid-svg-icons'
-import data from '../../../../../data';
+import { faEllipsis } from '@fortawesome/free-solid-svg-icons'
 import './ContentItem.scss'
 import { Link } from 'react-router-dom';
 const ContentItem = ({ data,  setCls ,newArr,cls,saveHandler,savedHandler }) => {
@@ -10,7 +9,7 @@ const ContentItem = ({ data,  setCls ,newArr,cls,saveHandler,savedHandler }) => 
     return (
        <div>
            {
-               data.map((elem,index)=>(
+               data.map((elem)=>(
                    <li key={uuidv4()} className='content-item'   id={elem.id}>
                        <Link to={`/@/${elem.name}`} >
                        <div className='content-header'>
@@ -24,7 +23,7 @@ const ContentItem = ({ data,  setCls ,newArr,cls,saveHandler,savedHandler }) => 
                                <h2 className='content-title'>{elem.title}</h2>
                                <p className='content-desc'>{elem.desc}</p>
                            </div>
-                           <img src={elem.img} alt={elem.name} />
+                           <img className='content-img' src={elem.img} alt={elem.name} />
                        </div>
                        </Link>
                        <div className='content-footer'>

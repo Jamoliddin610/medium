@@ -6,6 +6,7 @@
         text-decoration: none;
     }
 }
+
 .content-header{
     display: flex;
     align-items: center;
@@ -144,4 +145,7 @@
 }
 .show-small-modal{
     display: flex !important;
+}
+.content-img{
+    object-fit: cover;
 }

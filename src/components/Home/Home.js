@@ -5,11 +5,11 @@ import Right from '../Right/Right';
 import Center from './Center/Center';
 import './Home.scss'
 
-const Home = ({ name,clas,setClas, cls, setCls, arr, setArr,saveHandler,savedHandler}) => {
+const Home = ({ data, setData, name,clas,setClas, cls, setCls, arr, setArr,saveHandler,savedHandler}) => {
     return (
         <div className='home'>
             <Left firstWord={name.at(0)} />
-            <Center setCls={setCls} newArr={arr} cls={cls} saveHandler={saveHandler} savedHandler={savedHandler} />
+            <Center setCls={setCls} newArr={arr} setData={setData} data={data} cls={cls} saveHandler={saveHandler} savedHandler={savedHandler} />
             <Right/>
             <Modal clas={clas} setClas={setClas} arr={arr} setArr={setArr}/>
         </div>

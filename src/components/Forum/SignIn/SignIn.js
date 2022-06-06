@@ -9,6 +9,7 @@ const SignIn = (props) => {
     const [userEmpty, setUserEmpty] = useState(true)
     const [password, setPassword] = useState(true)
     const [PassEmpty, setPassEmpty] = useState(true)
+    const[check,setCheck]=useState(false)
     let userName = ""
     let passWord = ""
     const InputNameHandler = (e) => {
@@ -24,6 +25,8 @@ const SignIn = (props) => {
 
         } else {
             setUsername(true);
+            setCheck(true)
+
         }
     }
     const InputPasswordHandler = (e) => {
@@ -38,13 +41,10 @@ const SignIn = (props) => {
         }
          else {
             setPassword(true);
+            setCheck(true)
         }
     }
-    let chek = true
-    const buttonHandler = () =>{
-       chek=(username && password )
-       
-    }
+    
 
     return (
         <div className='sign-in-container'>
@@ -53,7 +53,7 @@ const SignIn = (props) => {
             <form className='sign-in-form'>
                 <input type="text" placeholder='Username' onChange={InputNameHandler} className={`${username ? '' : 'error'}`}/>
                 <input type="password" placeholder='Password' onChange={InputPasswordHandler} className={`${password ? '' : 'error'}`} />
-                <Link to={'home'}><button disabled={!chek}  onClick={buttonHandler}>Next Step</button></Link>
+                <Link to={'home'}><button disabled={check ? false : true}  >Next Step</button></Link>
                 <div className='sign-uper d-flex'>
                 <p>No account?</p>
                 <Link to="/signup"><span>Creat one</span></Link>

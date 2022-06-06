@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Left from '../Left/Left';
 import Modal from '../Modal/Modal';
 import Right from '../Right/Right';
@@ -11,9 +11,7 @@ const Lists = (props) => {
     const modalHandler = () =>{
         props.setClas('show')
     }
-    const [img,setImg] = useState('')
     
-    console.log(img);
     return (
         <>
             <Modal clas={ props.clas} setClas={ props.setClas} arr={ props.arr} setArr={ props.setArr}/>

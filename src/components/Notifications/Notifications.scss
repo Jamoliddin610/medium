@@ -1,0 +1,55 @@
+.notifa {
+    display: flex;
+    padding: 0 395px 0 82px;
+}
+
+.notifa-box {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    .notifa-container {
+        width: 695px;
+        margin: 0 32px;
+        .notifa-header{
+            padding: 52px 0 16px ;
+            h2{
+                margin-bottom: 40px;
+                font-size: 42px;
+                font-weight: 700;
+                color: rgb(41, 41, 41);
+                line-height: 52px;
+            }
+            .notifa-navbar{
+                display: flex;
+                gap: 32px;
+            box-shadow: inset 0 -1px 0 rgb(230 230 230);
+            p{
+                font-size: 14px;
+                line-height: 20px;
+                color: #757575;
+            }
+            .actv{
+                color: rgb(41, 41, 41);
+                border-bottom: solid 1px rgb(41, 41, 41);
+            }
+
+            }
+        }
+        .stats-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 10px 20px;
+            p{
+                color: #757575;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .stats-link{
+                color: rgba(26, 137, 23, 1);
+            }
+        }
+    }
+}

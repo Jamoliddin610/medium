@@ -4,21 +4,20 @@
     align-items: center;
     gap: 35px;
     a{
-        color:rgb(168, 168, 168);
+            color: rgba(41, 41, 41, 1);
+
+
         
         &:hover{
         color: rgba(41, 41, 41, 1);
        
     }
     }
-    .active{
-        svg{
-            color: rgba(41, 41, 41, 1);
-            path{
-                color: rgba(41, 41, 41, 1);
-                  
-            }
-        }
-    }
     
+    
+}
+.line{
+    height: 1px;
+    width: 24px;
+    background-color: rgba(230, 230, 230, 1);
 }

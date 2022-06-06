@@ -1,27 +1,27 @@
 import React from 'react';
 import './Topic.scss'
 import data from '../../../../data';
-const Topic = (props) => {
+const Topic = ({setArr,arr}) => {
     const btnArr = ['All','Social Media','World','Language','Programming']
     const filterHandler = (e) => {
         if (e.target.id === "All") {
-            props.setArr(data.map(item => {
+            setArr(data.map(item => {
                 return item;
             }))
         } else if (e.target.id === "Social Media") {
-            props.setArr(data.filter(item => {
+            setArr(data.filter(item => {
                 return item.topic === e.target.id;
             }))
         } else if (e.target.id === "World") {
-            props.setArr(data.filter(item => {
+            setArr(data.filter(item => {
                 return item.topic === e.target.id;
             }))
         } else if (e.target.id === "Language") {
-            props.setArr(data.filter(item => {
+            setArr(data.filter(item => {
                 return item.topic === e.target.id;
             }))
         } else if (e.target.id === "Programming") {
-            props.setArr(data.filter(item => {
+            setArr(data.filter(item => {
                 return item.topic === e.target.id;
             }))
         }

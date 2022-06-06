@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ContentItem from './ContentItem/ContentItem';
-import data from '../../../../data';
 import './Contents.scss'
 const Contents = (props) => {
     return (

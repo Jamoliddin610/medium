@@ -1,0 +1,85 @@
+.story {
+    display: flex;
+    padding: 0 395px 0 82px;
+}
+
+.story-box {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    .story-container {
+        width: 695px;
+        margin: 0 32px;
+        display: flex;
+        flex-direction: column;
+        .story-header{
+            margin: 52px 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                border: none;
+                padding: 7px 16px 9px;
+                border-radius: 99em;
+                line-height: 20px;
+                font-size: 14px;
+                background-color: transparent;
+            }
+            h2{
+                font-size: 42px;
+                color: rgb(41,41, 41);
+                font-weight: 700;
+            }
+            .story-btns{
+                display: flex;
+                gap: 10px;
+            }
+            .import-story{
+                border: solid 1px rgb(117, 117, 117);
+            }
+            .write-story{
+                background-color: rgb(26, 137, 23);
+                color: #fff;
+            }
+        }
+        .story-navbar{
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            box-shadow: inset 0 -1px 0 rgb(230 230 230);
+            .story-nav{
+                padding-bottom: 16px;
+                border-bottom: solid 1px rgb(230 230 230);
+
+            }
+            .actv{
+                color: rgb(41,41, 41) ;
+                border-bottom: solid 1px rgb(41,41, 41);
+            }
+        }
+        .story-content{
+            padding:  20px 0;
+            border-bottom: 1px solid rgba(230, 230, 230, 1);
+            .story-content-title{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                color: rgb(41,41, 41);
+                text-transform: capitalize;
+            }
+            .story-content-text{
+                font-size: 16px;
+                line-height: 20px;
+                color: #757575;
+            }
+            .story-content-time{
+                margin-top: 8px ;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgb(117, 117, 117);
+                margin-bottom: 0;
+            }
+        }   
+    }
+}
